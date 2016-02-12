@@ -1,3 +1,8 @@
+// Copyright (c) 2016 Damien Dart, <http://www.robotinaponcho.net/>.
+// This file is distributed under the MIT licence. For more information,
+// please refer to the accompanying "LICENCE" file.
+
+
 #define WIN32_LEAN_AND_MEAN
 #ifndef _WIN32_WINNT
 #define _WIN32_WINNT 0x0600
