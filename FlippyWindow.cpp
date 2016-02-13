@@ -16,11 +16,15 @@ LRESULT CALLBACK HostWndProc(HWND hWnd, UINT message, WPARAM wParam,
     LPARAM lParam)
 {
   switch (message) {
+    LRESULT cursorPosition;
     RECT hostClientRect;
 
     case WM_DESTROY:
       PostQuitMessage(0);
       break;
+    case WM_NCHITTEST:
+      cursorPosition = DefWindowProc(hWnd, message, wParam, lParam);
+      return (cursorPosition == HTCLIENT ? HTCAPTION : cursorPosition);
     case WM_SIZE:
       GetClientRect(hWnd, &hostClientRect);
       SetWindowPos(GetWindow(hWnd, GW_CHILD), NULL, hostClientRect.left,
