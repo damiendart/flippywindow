@@ -88,9 +88,8 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
       SetLayeredWindowAttributes(hwndHost, 0, 255, LWA_ALPHA);
       GetClientRect(hwndHost, &hostClientRect);
       hwndMagnifier = CreateWindow(WC_MAGNIFIER, TEXT("MagnifierWindow"),
-        MS_SHOWMAGNIFIEDCURSOR | WS_CHILD | WS_VISIBLE, hostClientRect.left,
-        hostClientRect.top, hostClientRect.right, hostClientRect.bottom,
-        hwndHost, NULL, hInstance, NULL);
+        WS_CHILD | WS_VISIBLE, 0, 0, hostClientRect.right,
+        hostClientRect.bottom, hwndHost, NULL, hInstance, NULL);
       if (!hwndMagnifier) {
         return 0;
       }
