@@ -23,6 +23,7 @@ LRESULT CALLBACK HostWndProc(HWND hWnd, UINT message, WPARAM wParam,
       PostQuitMessage(0);
       break;
     case WM_NCHITTEST:
+      // Allow the window to be draggable by its client area.
       cursorPosition = DefWindowProc(hWnd, message, wParam, lParam);
       return (cursorPosition == HTCLIENT ? HTCAPTION : cursorPosition);
     case WM_SIZE:
