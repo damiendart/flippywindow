@@ -10,6 +10,7 @@
 
 #include <windows.h>
 #include <magnification.h>
+#include <VersionHelpers.h>
 
 
 LRESULT CALLBACK HostWndProc(HWND hWnd, UINT message, WPARAM wParam,
@@ -66,6 +67,13 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
   MSG msg;
   UINT_PTR timerId;
 
+  // FlippyWindow (ab)uses the Magnification API which is only available
+  // on Windows Vista and later operating systems.
+  if (!IsWindowsVistaOrGreater()) {
+    MessageBox(NULL, "FlippyWindow requires Windows Vista or later.", NULL,
+        MB_OK | MB_ICONERROR);
+    return 0; // TODO: Find a more appropriate return value?
+  }
   if (MagInitialize()) {
     WNDCLASSEX wcex = {};
 
