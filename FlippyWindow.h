@@ -7,3 +7,8 @@
 #define ID_HORIZONTAL 1002
 #define ID_EXIT 1003
 #define ID_VERTICAL 1004
+
+#define WIN32_LEAN_AND_MEAN
+#ifndef _WIN32_WINNT
+#define _WIN32_WINNT 0x0600
+#endif

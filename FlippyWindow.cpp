@@ -3,9 +3,6 @@
 // please refer to the accompanying "LICENCE" file.
 
 
-#define WIN32_LEAN_AND_MEAN
-#define _WIN32_WINNT 0x0600
-
 #include <windows.h>
 #include <magnification.h>
 #include <VersionHelpers.h>
