@@ -1,0 +1,30 @@
+FlippyWindow
+============
+
+FlippyWindow is a super-simple Windows application that horizontally
+flips parts of the screen. [Flipping images][1] and [viewing things
+with a mirror][2] is a technique used to help spot issues and mistakes.
+
+[1]: <http://yourfirstproduct.com/info/bmreverse>
+[2]: <http://www.comic-tools.com/2008/10/my-mirror-is-most-important.html>
+
+FlippyWindow requires Windows Vista or a later Windows operating system
+as it (ab)uses the Magnification API.
+
+
+Building FlippyWindow
+---------------------
+
+Precompiled binaries are coming soon, so, for now, to get FlippyWindow:
+
+  1) Grab a copy of FlippyWindow's source code.
+  2) Use CMake to generate the Visual Studio bumf.
+  3) Use the generated Visual Studio bumf to build FlippyWindow. 
+
+
+Licence
+-------
+
+FlippyWindow is written by Damien Dart and is licenced under the MIT
+licence. For more information, please refer to the accompanying
+"LICENCE" file.
