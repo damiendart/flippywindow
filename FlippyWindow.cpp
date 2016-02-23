@@ -10,6 +10,8 @@
 #include <magnification.h>
 #include <VersionHelpers.h>
 
+#include "FlippyWindow.h"
+
 
 DWORD ErrorMessage(LPTSTR message)
 {
@@ -26,6 +28,13 @@ LRESULT CALLBACK HostWndProc(HWND hWnd, UINT message, WPARAM wParam,
     LRESULT cursorPosition;
     RECT hostClientRect;
 
+    case WM_COMMAND:
+      switch (LOWORD(wParam)) {
+        case ID_EXIT:
+          PostMessage(hWnd, WM_CLOSE, 0, 0);
+          break;
+      }
+      break;
     case WM_DESTROY:
       PostQuitMessage(0);
       break;
@@ -53,7 +62,8 @@ void CALLBACK UpdateMagnificationWindow(HWND hWnd, UINT uMsg,
 
   GetWindowRect(GetParent(hWnd), &hostWindowRect);
   magnificationSourceRect = {hostWindowRect.left + GetSystemMetrics(SM_CYFRAME),
-      hostWindowRect.top + GetSystemMetrics(SM_CYCAPTION) + (GetSystemMetrics(SM_CYFRAME) * 2),
+      hostWindowRect.top + GetSystemMetrics(SM_CYCAPTION) +
+      (GetSystemMetrics(SM_CYFRAME) * 2) + GetSystemMetrics(SM_CYMENU),
       hostWindowRect.right - GetSystemMetrics(SM_CYFRAME),
       hostWindowRect.bottom - GetSystemMetrics(SM_CXFRAME)};
   magnifierTranformationMatrix = {-1.0f, 0,
@@ -87,6 +97,7 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
     wcex.hInstance = hInstance;
     wcex.lpfnWndProc = HostWndProc;
     wcex.lpszClassName = TEXT("FlippyWindowWindow");
+    wcex.lpszMenuName = MAKEINTRESOURCE(FLIPPYWINDOWMENU);
     wcex.style = CS_HREDRAW | CS_VREDRAW;
     RegisterClassEx(&wcex);
     hwndHost = CreateWindowEx(WS_EX_TOPMOST | WS_EX_LAYERED,

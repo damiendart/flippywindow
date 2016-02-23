@@ -3,5 +3,5 @@
 # please refer to the accompanying "LICENCE" file.
 
 project("FlippyWindow")
-add_executable(FlippyWindow WIN32 FlippyWindow.cpp)
+add_executable(FlippyWindow WIN32 FlippyWindow.cpp FlippyWindow.h FlippyWindow.rc)
 target_link_libraries(FlippyWindow magnification.lib)

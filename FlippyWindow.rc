@@ -1,0 +1,23 @@
+// Copyright (c) 2016 Damien Dart, <http://www.robotinaponcho.net/>.
+// This file is distributed under the MIT licence. For more information,
+// please refer to the accompanying "LICENCE" file.
+
+#include "FlippyWindow.h"
+
+FLIPPYWINDOWMENU MENU
+{
+  POPUP "&File"
+  {
+    // TODO: Implement these menu options.
+    MENUITEM "Flip &horizontally", ID_HORIZONTAL, CHECKED, INACTIVE
+    MENUITEM "Flip &vertically", ID_VERTICAL, INACTIVE
+    MENUITEM SEPARATOR
+    MENUITEM "&Exit", ID_EXIT
+  }
+
+  POPUP "&Help"
+  {
+    // TODO: Implement menu option.
+    MENUITEM "&Visit FlippyWindow homepage", ID_HOMEPAGE, INACTIVE
+  }
+}
