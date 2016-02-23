@@ -4,9 +4,7 @@
 
 
 #define WIN32_LEAN_AND_MEAN
-#ifndef _WIN32_WINNT
 #define _WIN32_WINNT 0x0600
-#endif
 
 #include <windows.h>
 #include <magnification.h>
@@ -54,9 +52,8 @@ void CALLBACK UpdateMagnificationWindow(HWND hWnd, UINT uMsg,
   RECT hostWindowRect, magnificationSourceRect;
 
   GetWindowRect(GetParent(hWnd), &hostWindowRect);
-  magnificationSourceRect = { hostWindowRect.left +
-      GetSystemMetrics(SM_CYFRAME), hostWindowRect.top +
-      GetSystemMetrics(SM_CYCAPTION) + (GetSystemMetrics(SM_CYFRAME) * 2),
+  magnificationSourceRect = {hostWindowRect.left + GetSystemMetrics(SM_CYFRAME),
+      hostWindowRect.top + GetSystemMetrics(SM_CYCAPTION) + (GetSystemMetrics(SM_CYFRAME) * 2),
       hostWindowRect.right - GetSystemMetrics(SM_CYFRAME),
       hostWindowRect.bottom - GetSystemMetrics(SM_CXFRAME)};
   magnifierTranformationMatrix = {-1.0f, 0,
@@ -93,10 +90,10 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
     wcex.style = CS_HREDRAW | CS_VREDRAW;
     RegisterClassEx(&wcex);
     hwndHost = CreateWindowEx(WS_EX_TOPMOST | WS_EX_LAYERED,
-        TEXT("FlippyWindowWindow"), TEXT("FlippyWindow"), WS_CLIPCHILDREN |
-        WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, GetSystemMetrics(
-        SM_CXSCREEN) / 2, GetSystemMetrics(SM_CYSCREEN) / 2, NULL, NULL,
-        hInstance, NULL);
+        TEXT("FlippyWindowWindow"), TEXT("FlippyWindow"),
+        WS_CLIPCHILDREN | WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT,
+        GetSystemMetrics(SM_CXSCREEN) / 2, GetSystemMetrics(SM_CYSCREEN) / 2,
+        NULL, NULL, hInstance, NULL);
     if (hwndHost) {
       RECT hostClientRect;
 
