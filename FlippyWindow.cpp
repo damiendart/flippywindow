@@ -13,6 +13,14 @@
 #include <VersionHelpers.h>
 
 
+DWORD ErrorMessage(LPTSTR message)
+{
+  // TODO: Add to message with "GetLastError" and "FormatMessage".
+  MessageBox(NULL, message, TEXT("FlippyWindow"), MB_OK | MB_ICONERROR);
+  return 0; // TODO: Find a more appropriate return value?
+}
+
+
 LRESULT CALLBACK HostWndProc(HWND hWnd, UINT message, WPARAM wParam,
     LPARAM lParam)
 {
@@ -70,9 +78,7 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
   // FlippyWindow (ab)uses the Magnification API which is only available
   // on Windows Vista and later operating systems.
   if (!IsWindowsVistaOrGreater()) {
-    MessageBox(NULL, "FlippyWindow requires Windows Vista or later.", NULL,
-        MB_OK | MB_ICONERROR);
-    return 0; // TODO: Find a more appropriate return value?
+    return ErrorMessage("Windows Vista or later is required.");
   }
   if (MagInitialize()) {
     WNDCLASSEX wcex = {};
@@ -100,13 +106,14 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
         WS_CHILD | WS_VISIBLE, 0, 0, hostClientRect.right,
         hostClientRect.bottom, hwndHost, NULL, hInstance, NULL);
       if (!hwndMagnifier) {
-        return 0;
+        return ErrorMessage(TEXT("Unable to create magnification window."));
       }
     } else {
-      return 0;
+      return ErrorMessage(TEXT("Unable to create main window."));
     }
   } else {
-    return 0;
+    return ErrorMessage(
+        TEXT("Unable to initialise magnification run-time objects."));
   }
   ShowWindow(hwndHost, nCmdShow);
   UpdateWindow(hwndHost);
