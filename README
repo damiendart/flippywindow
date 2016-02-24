@@ -19,7 +19,7 @@ Precompiled binaries are coming soon, so, for now, to get FlippyWindow:
 
   1) Grab a copy of FlippyWindow's source code.
   2) Use CMake to generate the Visual Studio bumf.
-  3) Use the generated Visual Studio bumf to build FlippyWindow. 
+  3) Use the generated Visual Studio bumf to build FlippyWindow.
 
 
 Licence
