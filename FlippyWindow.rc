@@ -28,8 +28,8 @@ END
 
 
 VS_VERSION_INFO VERSIONINFO
-  FILEVERSION 0, 1, 0, 0
-  PRODUCTVERSION 0, 1, 0, 0
+  FILEVERSION VERSION_BINARY
+  PRODUCTVERSION VERSION_BINARY
   FILEFLAGSMASK VS_FF_DEBUG
   FILEFLAGS 0x0L
 #ifdef _DEBUG
@@ -45,12 +45,12 @@ VS_VERSION_INFO VERSIONINFO
       BEGIN
         VALUE "CompanyName", "Damien Dart"
         VALUE "FileDescription", "Horizontally flip part of the screen."
-        VALUE "FileVersion", "0.1"
+        VALUE "FileVersion", VERSION_STRING
         VALUE "InternalFilename", "FlippyWindow"
         VALUE "LegalCopyright", "Copyright \251 2016 Damien Dart."
         VALUE "OriginalFilename", "FlippyWindow.exe"
         VALUE "ProductName", "FlippyWindow"
-        VALUE "ProductVersion", "0.1"
+        VALUE "ProductVersion", VERSION_STRING
       END
     END
     BLOCK "VarFileInfo"
