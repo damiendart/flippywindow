@@ -3,7 +3,7 @@ FlippyWindow
 
 FlippyWindow is a super-simple Windows application that horizontally
 flips part of the screen. [Flipping images][1] and [viewing things
-with a mirror is a technique used to help spot issues and mistakes][2].
+with a mirror is a technique used to help spot visual issues][2].
 
 [1]: <http://yourfirstproduct.com/info/bmreverse>
 [2]: <http://www.comic-tools.com/2008/10/my-mirror-is-most-important.html>
@@ -15,7 +15,7 @@ as it (ab)uses the Magnification API.
 Building FlippyWindow
 ---------------------
 
-Precompiled binaries are coming soon, so, for now, to get FlippyWindow:
+Precompiled binaries are coming soon so, for now, to get FlippyWindow:
 
   1) Grab a copy of FlippyWindow's source code.
   2) Use CMake to generate Visual Studio bumf.
