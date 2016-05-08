@@ -30,6 +30,10 @@ LRESULT CALLBACK HostWndProc(HWND hWnd, UINT message, WPARAM wParam,
         case ID_EXIT:
           PostMessage(hWnd, WM_CLOSE, 0, 0);
           break;
+        case ID_HOMEPAGE:
+          ShellExecute(NULL, "open", "https://www.robotinaponcho.net/flippywindow/",
+              NULL, NULL, SW_SHOWNORMAL);
+          break;
       }
       break;
     case WM_DESTROY:

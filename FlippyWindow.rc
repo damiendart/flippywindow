@@ -25,7 +25,7 @@ BEGIN
     MENUITEM VERSION_STRING_FULL, ID_VERSION, INACTIVE
     MENUITEM SEPARATOR
     // TODO: Implement menu option.
-    MENUITEM "&Visit FlippyWindow homepage", ID_HOMEPAGE, INACTIVE
+    MENUITEM "&Visit FlippyWindow homepage", ID_HOMEPAGE
   END
 END
 
