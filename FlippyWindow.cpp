@@ -31,7 +31,7 @@ LRESULT CALLBACK HostWndProc(HWND hWnd, UINT message, WPARAM wParam,
           PostMessage(hWnd, WM_CLOSE, 0, 0);
           break;
         case ID_HOMEPAGE:
-          ShellExecute(NULL, "open", "https://www.robotinaponcho.net/flippywindow/",
+          ShellExecute(NULL, "open", "https://www.robotinaponcho.net/fw/",
               NULL, NULL, SW_SHOWNORMAL);
           break;
       }
