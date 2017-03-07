@@ -134,5 +134,5 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
   }
   KillTimer(NULL, timerId);
   MagUninitialize();
-  return msg.wParam;
+  return (int)msg.wParam;
 }
