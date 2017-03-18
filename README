@@ -15,12 +15,15 @@ as it (ab)uses the Magnification API.
 Building FlippyWindow
 ---------------------
 
-Precompiled binaries are coming soon so, for now, to get FlippyWindow:
+Precompiled binaries are coming soon so, for now, to use FlippyWindow:
 
-  1) Grab a copy of FlippyWindow's source code.
+  1) Grab a copy of [FlippyWindow's source code][3] (which is also
+  available on [GitHub][4]).
   2) Use CMake to generate Visual Studio bumf.
   3) Use the generated Visual Studio bumf to build FlippyWindow.
 
+[3]: <https://www.robotinaponcho.net/git/?p=flippywindow.git>
+[4]: <https://github.com/damiendart/flippywindow>
 
 Licence
 -------
