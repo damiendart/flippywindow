@@ -47,10 +47,10 @@ VS_VERSION_INFO VERSIONINFO
       BLOCK "080904B0" // U.K. English and Unicode.
       BEGIN
         VALUE "CompanyName", "Damien Dart"
-        VALUE "FileDescription", "Horizontally flip part of the screen."
+        VALUE "FileDescription", "FlippyWindow"
         VALUE "FileVersion", VERSION_STRING
-        VALUE "InternalFilename", "FlippyWindow"
-        VALUE "LegalCopyright", "Copyright \251 2016 Damien Dart."
+        VALUE "InternalName", "FlippyWindow"
+        VALUE "LegalCopyright", "Copyright \251 2016-2017 Damien Dart."
         VALUE "OriginalFilename", "FlippyWindow.exe"
         VALUE "ProductName", "FlippyWindow"
         VALUE "ProductVersion", VERSION_STRING
