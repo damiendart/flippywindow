@@ -2,8 +2,9 @@ FlippyWindow
 ============
 
 FlippyWindow is a super-simple Windows application that horizontally
-flips part of the screen. [Flipping images][1] and [viewing things
-with a mirror is a technique used to help spot visual issues][2].
+flips part of the screen. Flipping images and viewing things with a
+mirror is a technique used to help [spot visual issues][1] and [view
+things with "fresh eyes"][2].
 
 [1]: <http://yourfirstproduct.com/info/bmreverse>
 [2]: <http://www.comic-tools.com/2008/10/my-mirror-is-most-important.html>
