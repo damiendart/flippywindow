@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 936 936">
+  <defs>
+    <radialGradient id="a" cx="468" cy="468" r="586.06" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#94c9ff"/>
+      <stop offset="0.09" stop-color="#8bc5fc"/>
+      <stop offset="0.23" stop-color="#71bcf3"/>
+      <stop offset="0.41" stop-color="#48ace5"/>
+      <stop offset="0.57" stop-color="#1e9cd7"/>
+      <stop offset="0.87" stop-color="#0075be"/>
+      <stop offset="0.99" stop-color="#005b97"/>
+    </radialGradient>
+  </defs>
+  <title>FlippyWindow</title>
+  <rect width="936" height="936" fill="url(#a)"/>
+  <polygon points="234 156 370.5 156 370.5 234 234 234 234 429 370.5 429 370.5 507 234 507 234 780 156 780 156 507 156 429 156 234 156 156 234 156" fill="#fff"/>
+  <polygon points="507 156 507 702 565.5 702 565.5 156 643.5 156 643.5 702 702 702 702 156 780 156 780 702 780 780 682.5 780 633.75 780 536.25 780 487.5 780 429 780 429 156 507 156" fill="#fff"/>
+</svg>

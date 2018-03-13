@@ -20,11 +20,14 @@ Precompiled binaries are coming soon so, for now, to use FlippyWindow:
 
   1) Grab a copy of [FlippyWindow's source code][3] (which is also
   available on [GitHub][4]).
-  2) Use CMake to generate Visual Studio bumf.
-  3) Use the generated Visual Studio bumf to build FlippyWindow.
+  2) Build FlippyWindow's icon with "BuildIcon.bat" (you'll need
+  [ImageMagick][5] installed).
+  3) Use CMake to generate Visual Studio bumf.
+  4) Use the generated Visual Studio bumf to build FlippyWindow.
 
 [3]: <https://www.robotinaponcho.net/git/?p=flippywindow.git>
 [4]: <https://github.com/damiendart/flippywindow>
+[5]: <https://www.imagemagick.org/>
 
 Licence
 -------

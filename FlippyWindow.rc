@@ -8,6 +8,8 @@
 #include "FlippyWindow.h"
 
 
+FLIPPYWINDOWICON ICON "FlippyWindow.ico"
+
 FLIPPYWINDOWMENU MENU
 BEGIN
   POPUP "&File"

@@ -2,7 +2,7 @@ TODO
 ====
 
   * Release FlippyWindow version 1.0.
-    * [ ] Make an application icon.
+    * [X] Make an application icon.
     * [ ] Finish website and all that stuff.
   * Get the FlippyWindow executable digitally signed.
   * Add support for vertical flipping.

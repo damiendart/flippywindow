@@ -94,7 +94,9 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
     wcex.cbSize = sizeof(WNDCLASSEX);
     wcex.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
     wcex.hCursor = LoadCursor(NULL, IDC_ARROW);
-    wcex.hIcon = LoadIcon(NULL, IDI_APPLICATION);
+    wcex.hIcon = (HICON)LoadImage(hInstance,
+        MAKEINTRESOURCE(FLIPPYWINDOWICON), IMAGE_ICON, 0, 0,
+        LR_DEFAULTCOLOR | LR_SHARED | LR_DEFAULTSIZE);
     wcex.hInstance = hInstance;
     wcex.lpfnWndProc = HostWndProc;
     wcex.lpszClassName = TEXT("FlippyWindowWindow");
