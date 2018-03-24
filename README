@@ -1,13 +1,15 @@
 FlippyWindow
 ============
 
-FlippyWindow is a simple Windows application that horizontally flips any
-part of your screen. Flipping images (or viewing things with a mirror)
-is a technique used to [help view things with "fresh eyes"][1] which can
-aid with [spotting visual issues][2].
+[FlippyWindow][1] is a simple Windows application that non-destructively
+flips any part of your screen horizontally, in realtime and using
+minimal resources. Flipping images (or viewing things with a mirror) is
+a technique used to [help view things with "fresh eyes"][2] which can
+aid with [spotting visual issues][3].
 
-[1]: <http://www.comic-tools.com/2008/10/my-mirror-is-most-important.html>
-[2]: <http://yourfirstproduct.com/info/bmreverse>
+[1]: <https://www.robotinaponcho.net/flippywindow/>
+[2]: <http://www.comic-tools.com/2008/10/my-mirror-is-most-important.html>
+[3]: <http://yourfirstproduct.com/info/bmreverse>
 
 FlippyWindow requires Windows Vista or a later Windows operating system
 as it (ab)uses the Magnification API.
@@ -16,18 +18,16 @@ as it (ab)uses the Magnification API.
 Building FlippyWindow
 ---------------------
 
-Precompiled binaries are coming soon so, for now, to use FlippyWindow:
-
-  1) Grab a copy of [FlippyWindow's source code][3] (which is also
-  available on [GitHub][4]).
+  1) Grab a copy of [FlippyWindow's source code][4] (which is also
+  available on [GitHub][5]).
   2) Build FlippyWindow's icon with "BuildIcon.bat" (you'll need
-  [ImageMagick][5] installed and available from the command line).
+  [ImageMagick][6] installed and available from the command line).
   3) Use CMake to generate Visual Studio bumf.
   4) Use the generated Visual Studio bumf to build FlippyWindow.
 
-[3]: <https://www.robotinaponcho.net/git/?p=flippywindow.git>
-[4]: <https://github.com/damiendart/flippywindow>
-[5]: <https://www.imagemagick.org/>
+[4]: <https://www.robotinaponcho.net/git/?p=flippywindow.git>
+[5]: <https://github.com/damiendart/flippywindow>
+[6]: <https://www.imagemagick.org/>
 
 
 Licence
