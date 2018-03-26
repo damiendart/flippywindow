@@ -59,14 +59,9 @@ void CALLBACK UpdateMagnificationWindow(HWND hWnd, UINT uMsg,
     UINT_PTR idEvent, DWORD dwTime)
 {
   MAGTRANSFORM magnifierTranformationMatrix;
-  RECT hostWindowRect, magnificationSourceRect;
+  RECT magnificationSourceRect;
 
-  GetWindowRect(GetParent(hWnd), &hostWindowRect);
-  magnificationSourceRect = {hostWindowRect.left + GetSystemMetrics(SM_CYFRAME),
-      hostWindowRect.top + GetSystemMetrics(SM_CYCAPTION) +
-      (GetSystemMetrics(SM_CYFRAME) * 2) + GetSystemMetrics(SM_CYMENU),
-      hostWindowRect.right - GetSystemMetrics(SM_CYFRAME),
-      hostWindowRect.bottom - GetSystemMetrics(SM_CXFRAME)};
+  GetWindowRect(hWnd, &magnificationSourceRect);
   magnifierTranformationMatrix = {-1.0f, 0,
       (float)(magnificationSourceRect.right - magnificationSourceRect.left),
       0, 1.0f, 0, 0, 0, 1.0f};
