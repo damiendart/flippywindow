@@ -54,7 +54,7 @@ VS_VERSION_INFO VERSIONINFO
         VALUE "FileDescription", "FlippyWindow"
         VALUE "FileVersion", VERSION_STRING
         VALUE "InternalName", "FlippyWindow"
-        VALUE "LegalCopyright", "Copyright \251 2016-2017 Damien Dart."
+        VALUE "LegalCopyright", "Copyright \251 2016-2018 Damien Dart."
         VALUE "OriginalFilename", "FlippyWindow.exe"
         VALUE "ProductName", "FlippyWindow"
         VALUE "ProductVersion", VERSION_STRING
