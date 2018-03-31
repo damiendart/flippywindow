@@ -78,10 +78,10 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
   MSG msg;
   UINT_PTR timerId;
 
-  // FlippyWindow (ab)uses the Magnification API which is only available
-  // on Windows Vista and later operating systems.
-  if (!IsWindowsVistaOrGreater()) {
-    return ErrorMessage("Windows Vista or later is required.");
+  // FlippyWindow (ab)uses the second release of the Magnification API
+  // which is only available on Windows 8 and later operating systems.
+  if (!IsWindows8OrGreater()) {
+    return ErrorMessage("Windows 8 or later is required.");
   }
   if (MagInitialize()) {
     WNDCLASSEX wcex = {};
