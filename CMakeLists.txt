@@ -5,8 +5,9 @@
 cmake_minimum_required (VERSION 2.6)
 
 project("FlippyWindow")
-set(VERSION_MAJOR 0)
-set(VERSION_MINOR 1)
+set(VERSION_MAJOR 1)
+set(VERSION_MINOR 0)
+set(VERSION_PATCH 0)
 # Tweak run-time library options to use static versions so we don't have
 # to faff around with all that "Visual C++ Redistributable" stuff.
 foreach(flags
