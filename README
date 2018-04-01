@@ -2,7 +2,7 @@ FlippyWindow
 ============
 
 [FlippyWindow][1] is a simple Windows application that non-destructively
-flips any part of your screen horizontally, in realtime and using
+flips any part of your screen horizontally, in real-time and using
 minimal resources. Flipping images (or viewing things with a mirror) is
 a technique used to [help view things with "fresh eyes"][2] which can
 aid with [spotting visual issues][3].
