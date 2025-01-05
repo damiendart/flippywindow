@@ -1,4 +1,9 @@
 <?xml version="1.0"?>
+<!--
+  Copyright (C) Damien Dart, <damiendart@pobox.com>.
+  This file is distributed under the MIT licence. For more information,
+  please refer to the accompanying "LICENCE" file.
+-->
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
   <application xmlns="urn:schemas-microsoft-com:asm.v3">
     <windowsSettings>

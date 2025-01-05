@@ -1,3 +1,8 @@
+<!--
+  Copyright (C) Damien Dart, <damiendart@pobox.com>.
+  This file is distributed under the MIT licence. For more information,
+  please refer to the accompanying "LICENCE" file.
+-->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 936 936">
   <defs>
     <radialGradient id="a" cx="468" cy="468" r="586.06" gradientUnits="userSpaceOnUse">

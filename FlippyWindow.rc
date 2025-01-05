@@ -1,4 +1,4 @@
-// Copyright (c) 2016-2018 Damien Dart, <https://www.robotinaponcho.net/>.
+// Copyright (C) Damien Dart, <damiendart@pobox.com>.
 // This file is distributed under the MIT licence. For more information,
 // please refer to the accompanying "LICENCE" file.
 
@@ -54,7 +54,7 @@ VS_VERSION_INFO VERSIONINFO
         VALUE "FileDescription", "FlippyWindow"
         VALUE "FileVersion", VERSION_STRING
         VALUE "InternalName", "FlippyWindow"
-        VALUE "LegalCopyright", "Copyright \251 2016-2018 Damien Dart."
+        VALUE "LegalCopyright", "Copyright \251 2016-2025 Damien Dart."
         VALUE "OriginalFilename", "FlippyWindow.exe"
         VALUE "ProductName", "FlippyWindow"
         VALUE "ProductVersion", VERSION_STRING

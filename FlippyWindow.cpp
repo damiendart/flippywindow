@@ -1,4 +1,4 @@
-// Copyright (c) 2016-2018 Damien Dart, <https://www.robotinaponcho.net/>.
+// Copyright (C) Damien Dart, <damiendart@pobox.com>.
 // This file is distributed under the MIT licence. For more information,
 // please refer to the accompanying "LICENCE" file.
 

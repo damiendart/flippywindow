@@ -1,4 +1,4 @@
-@REM Copyright (c) 2016-2018 Damien Dart, <https://www.robotinaponcho.net/>.
+@REM Copyright (C) Damien Dart, <damiendart@pobox.com>.
 @REM This file is distributed under the MIT licence. For more
 @REM information, please refer to the accompanying "LICENCE" file.
 
