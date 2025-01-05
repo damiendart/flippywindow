@@ -23,4 +23,5 @@ configure_file(
 include_directories("${PROJECT_SOURCE_DIR}")
 add_executable(FlippyWindow WIN32
     FlippyWindow.cpp FlippyWindow.ico FlippyWindow.rc)
+target_sources(FlippyWindow PRIVATE dpi-aware.manifest)
 target_link_libraries(FlippyWindow magnification.lib)
